@@ -9,10 +9,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>HNTSA!</title>
+    <title>Hello, world!</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -29,7 +30,9 @@
     </nav>
     <header>
         <div class="container">
-            <h1 class="text-center">How Not To Suck At <br> <span class="color-primary">Personal Finance 💸</span></h1>
+            <h1 class="text-center">How Not To Suck At <br> <span class="color-primary finance-personal">Personal
+                    Finance </span>💸</h1>
+            <br>
             <p class="text-center text-22 d-none d-md-block">Everything you need to know about anything!</p>
             <br>
             <br>
@@ -45,36 +48,50 @@
     <div class="learn">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <h2>
-                        Learn everything about anything.
-                    </h2>
-                    <p class="text-md-22 text-16 d-none d-md-block">
-                        Superb courses taught by experts.
-                    </p>
-                    <p class="text-md-22 text-16 d-block d-md-none">
-                        Nothing is complicated. Everything <br> you need to know about everything!
-                    </p>
+                <div class="col-md-5 d-flex">
+                    <div class="align-self-center">
+                        <h2>
+                            Learn everything about anything.
+                        </h2>
+                        <p class="text-md-22 text-16 d-none d-md-block color-gray mt-4">
+                            Superb courses taught by experts.
+                        </p>
+                        <p class="text-md-22 text-16 d-block d-md-none color-gray ">
+                            Nothing is complicated. Everything <br> you need to know about everything!
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-7 col-sm-12 mt-4 mt-md-0">
                     <div id="slickReels">
                         <div class="reels-cover">
                             <div class="ml-3">
+                                <div class="player-box" onclick="playVideo(this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
                                 <video src="assets/video/reels2.mp4"></video>
                             </div>
                         </div>
                         <div class="reels-cover">
                             <div class="ml-3">
+                                <div class="player-box" onclick="playVideo(this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
                                 <video src="assets/video/reels2.mp4"></video>
                             </div>
                         </div>
                         <div class="reels-cover">
                             <div class="ml-3">
+                                <div class="player-box" onclick="playVideo(this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
                                 <video src="assets/video/reels2.mp4"></video>
                             </div>
                         </div>
                         <div class="reels-cover">
                             <div class="ml-3">
+                                <div class="player-box" onclick="playVideo(this)">
+                                    <i class="fas fa-play"></i>
+                                </div>
                                 <video src="assets/video/reels2.mp4"></video>
                             </div>
                         </div>
@@ -208,10 +225,10 @@
     <footer class="px-2 px-md-0">
         <div class="container">
             <div class="row flex-md-row flex-column-reverse">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="assets/img/logo.svg" alt="" srcset="">
-                    <h3 class="my-3 mb-1">Contact Us</h3>
-                    <p class="txt-gray mb-3">Nothing is complicated.</p>
+                    <h3 class="my-3 mb-1 d-block d-md-none">Contact Us</h3>
+                    <p class="color-gray mt-2 mb-3">Nothing is complicated.</p>
                     <div class="d-flex">
                         <img src="assets/img/icons/instagram.svg" alt="" class="d-block me-3">
                         <img src="assets/img/icons/youtube.svg" alt="" class="d-block me-3">
@@ -219,9 +236,9 @@
                         <img src="assets/img/icons/medium.svg" alt="" class="d-block me-3">
                     </div>
                 </div>
-                <div class="col-md-8 mb-4 mb-md-0">
+                <div class="col-md-10 mb-4 mb-md-0">
                     <div class=" row">
-                        <div class="col-md mt-3">
+                        <div class="col-md mt-3 p-0">
                             <div class="footer-list d-flex align-items-start  w-100">
                                 <img src="assets/img/icons/scales.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
                                 <img src="assets/img/icons/scales-bg.svg" class="mt-2 d-md-none d-block" alt=""
@@ -230,46 +247,59 @@
                                     <p class="text-20 mb-0 font-medium">
                                         Legal stuff
                                     </p>
-                                    <p class="text-blue">legal@hntsa.com</ class="text-blue">
+                                    <p class="text-blue mb-0">legal@hntsa.com</p>
                                 </div>
+                                <a href="" class="ms-auto d-block d-md-none align-self-center">
+                                    <img src="assets/img/icons/forward.svg" alt="" srcset="">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md mt-3">
+                        <div class="col-md mt-3 p-0">
                             <div class="footer-list d-flex align-items-start  w-100">
-                                <img src="assets/img/icons/scales.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
+                                <img src="assets/img/icons/search.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
                                 <img src="assets/img/icons/search-bg.svg" class="mt-2 d-md-none d-block" alt=""
                                     srcset="">
                                 <div class="flex flex-column ms-3">
                                     <p class="text-20 mb-0 font-medium">
                                         Everything else
                                     </p>
-                                    <p class="text-blue">hello@hntsa.com</p>
+                                    <p class="text-blue mb-0">hello@hntsa.com</p>
                                 </div>
+                                <a href="" class="ms-auto d-block d-md-none align-self-center">
+                                    <img src="assets/img/icons/forward.svg" alt="" srcset="">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md mt-3">
+                        <div class="col-md mt-3 p-0">
                             <div class="footer-list d-flex align-items-start  w-100">
-                                <img src="assets/img/icons/scales.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
+                                <img src="assets/img/icons/user.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
                                 <img src="assets/img/icons/user-bg.svg" class="mt-2 d-md-none d-block" alt="" srcset="">
                                 <div class="flex flex-column ms-3">
                                     <p class="text-20 mb-0 font-medium">
                                         Press inquiries
                                     </p>
-                                    <p class="text-blue">press@hntsa.com</p>
+                                    <p class="text-blue mb-0">press@hntsa.com</p>
                                 </div>
+                                <a href="" class="ms-auto d-block d-md-none align-self-center">
+                                    <img src="assets/img/icons/forward.svg" alt="" srcset="">
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md mt-3">
+                        <div class="col-md mt-3 p-0">
                             <div class="footer-list d-flex align-items-start  w-100">
-                                <img src="assets/img/icons/scales.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
+                                <img src="assets/img/icons/building.svg" class="mt-2 d-none d-md-block" alt=""
+                                    srcset="">
                                 <img src="assets/img/icons/building-bg.svg" class="mt-2 d-md-none d-block" alt=""
                                     srcset="">
                                 <div class="flex flex-column ms-3">
                                     <p class="text-20 mb-0 font-medium">
-                                        Legal stuff
+                                        Business Development
                                     </p>
-                                    <p class="text-blue">legal@hntsa.com</p>
+                                    <p class="text-blue mb-0">legal@hntsa.com</p>
                                 </div>
+                                <a href="" class="ms-auto d-block d-md-none align-self-center">
+                                    <img src="assets/img/icons/forward.svg" alt="" srcset="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -284,7 +314,8 @@
             <h2 class="text-white text-center">Want to become a course instructor?</h2>
             <br>
             <div class="d-flex justify-content-center flex-column">
-                <button class="button button-dark" data-bs-toggle="modal" data-bs-target="#formSmall">
+                <button class="button button-dark w-fit mx-auto d-block" data-bs-toggle="modal"
+                    data-bs-target="#formSmall">
                     Apply Now
                 </button>
                 <button class="button button-transparent font-medium color-dark ms-2 d-block">
