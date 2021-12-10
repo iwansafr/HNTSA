@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>How Not To Stuck At?</title>
+    <title>How Not To Suck At?</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <nav class="d-block d-md-none">
+    <nav class="d-block d-md-none invisible">
         <div class="d-flex justify-content-between align-items-center">
             <div class="left-logo ">
                 <img src="assets/img/logo.svg" class="d-block ms-auto" alt="" srcset="">
@@ -43,17 +43,21 @@
     </nav>
     <header>
         <div class="container">
-            <h1 class="text-center font-bold">How Not To Suck At <br> <span
-                    class="color-primary finance-personal">Personal
-                    Finance 💸</span></h1>
+            <h1 class="text-center font-bold position-relative">How Not To Suck At<span class="tm">&trade;</span></h1>
+            <div class="slide-container d-flex flex-column justify-content-center">
+                <div class="slider">
+
+                </div>
+            </div>
             <br>
-            <p class="text-center text-22 d-none d-md-block">Nothing is complicated</p>
+            <p class="text-center text-22 d-none d-md-block">Nothing is complicated.</p>
             <br>
             <br>
             <div class="d-flex flex-column flex-md-row justify-content-center">
-                <input type="text" class="custom-input" placeholder="Your email address">
+                <input type="text" class="custom-input" placeholder="Your email address" maxlength="300">
                 <button style="height: 51px;"
-                    class="button button-primary ms-md-4 align-self-center w-fit d-block mt-3 mt-md-0">
+                    class="button button-primary ms-md-4 align-self-center w-fit d-block mt-3 mt-md-0"
+                    onclick="alert('Thank you! We&#8217;ll keep you posted!')">
                     Sign Up
                 </button>
             </div>
@@ -66,7 +70,7 @@
                 <div class="col-md-5 d-flex">
                     <div class="align-self-center">
                         <h2>
-                            Learn everything about anything.
+                            Learn everything <br> about anything.
                         </h2>
                         <p class="text-md-22 text-16 d-none d-md-block color-gray mt-4">
                             Superb courses taught by experts.
@@ -137,7 +141,7 @@
         </div>
     </div> -->
 
-    <div class="instructor d-none d-md-block">
+    <div class="instructor d-none d-md-block my-5">
         <div class="container">
             <div class="instructor-box">
                 <h2 class="text-white text-center">Want to become a course instructor?</h2>
@@ -161,14 +165,14 @@
                                             <div class="mt-3 d-flex flex-column">
                                                 <label for="" class="form-label">Your Name</label>
                                                 <input type="text" placeholder="Johnny Appleseed"
-                                                    class="custom-input-rounded">
+                                                    class="custom-input-rounded" maxlength="300">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mt-3 d-flex flex-column">
                                                 <label for="" class="form-label">Your Username</label>
                                                 <input type="text" placeholder="YourName@gmail.com"
-                                                    class="custom-input-rounded">
+                                                    class="custom-input-rounded" maxlength="300">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -210,7 +214,8 @@
                                                     this course?</label>
                                                 <textarea name=""
                                                     placeholder="I’m the best person to teach this course because ..."
-                                                    class="custom-input-rounded" id="" cols="30" rows="10"></textarea>
+                                                    class="custom-input-rounded " id="" cols="30" rows="10"
+                                                    maxlength="300"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -219,7 +224,8 @@
                                                     this course?</label>
                                                 <textarea name=""
                                                     placeholder="Yeah! I have XYZ subscribers. Here’s the URL to my channel: YouTube.com/c/HowNotToSuckAt"
-                                                    class="custom-input-rounded" id="" cols="30" rows="10"></textarea>
+                                                    class="custom-input-rounded" id="" cols="30" rows="10"
+                                                    maxlength="300"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -237,12 +243,12 @@
         </div>
     </div>
 
-    <div class="d-md-none my-3  py-3">
+    <!-- <div class="d-md-none my-3  py-3">
         <br>
         <br>
         <br>
         <div class="container">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/Y1Sf1ZqUm24?start=3">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe>
 
             <br>
@@ -254,9 +260,8 @@
         </div>
 
 
-    </div>
-    <br>
-    <br>
+    </div> -->
+
 
     <footer class="px-2 px-md-0">
         <div class="container">
@@ -265,8 +270,8 @@
                     <img src="assets/img/logo.svg" alt="" srcset="">
                     <h3 class="my-3 mb-1 d-block d-md-none">Contact Us</h3>
                     <p class="color-gray mt-2 mb-0">Nothing is complicated.</p>
-                    <p class="color-gray  mb-0">HNSTA Holdings, LLC</p>
-                    <p class="color-gray  mb-3">Copyright 2021, All rights reserved</p>
+                    <p class="color-gray  mb-0">HNTSA Holdings, LLC.</p>
+                    <p class="color-gray  mb-3">Copyright 2021. All rights reserved.</p>
                     <div class="d-flex">
                         <a href="https://instagram.com">
                             <img src="assets/img/icons/instagram.svg" alt="" class="d-block me-3">
@@ -302,14 +307,15 @@
                         </div>
                         <div class="col-md mt-3 p-0">
                             <div class="footer-list d-flex align-items-start  w-100">
-                                <img src="assets/img/icons/search.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
-                                <img src="assets/img/icons/search-bg.svg" class="mt-2 d-md-none d-block" alt=""
+                                <img src="assets/img/icons/building.svg" class="mt-2 d-none d-md-block" alt=""
+                                    srcset="">
+                                <img src="assets/img/icons/building-bg.svg" class="mt-2 d-md-none d-block" alt=""
                                     srcset="">
                                 <div class="flex flex-column ms-3">
                                     <p class="text-20 mb-0 font-medium">
-                                        Everything else
+                                        Business Development
                                     </p>
-                                    <p class="text-blue mb-0">hello@hntsa.com</p>
+                                    <p class="text-blue mb-0">business@hntsa.com</p>
                                 </div>
                                 <a href="" class="ms-auto d-block d-md-none align-self-center">
                                     <img src="assets/img/icons/forward.svg" alt="" srcset="">
@@ -333,30 +339,30 @@
                         </div>
                         <div class="col-md mt-3 p-0">
                             <div class="footer-list d-flex align-items-start  w-100">
-                                <img src="assets/img/icons/building.svg" class="mt-2 d-none d-md-block" alt=""
-                                    srcset="">
-                                <img src="assets/img/icons/building-bg.svg" class="mt-2 d-md-none d-block" alt=""
+                                <img src="assets/img/icons/search.svg" class="mt-2 d-none d-md-block" alt="" srcset="">
+                                <img src="assets/img/icons/search-bg.svg" class="mt-2 d-md-none d-block" alt=""
                                     srcset="">
                                 <div class="flex flex-column ms-3">
                                     <p class="text-20 mb-0 font-medium">
-                                        Business Development
+                                        Everything else
                                     </p>
-                                    <p class="text-blue mb-0">legal@hntsa.com</p>
+                                    <p class="text-blue mb-0">hello@hntsa.com</p>
                                 </div>
                                 <a href="" class="ms-auto d-block d-md-none align-self-center">
                                     <img src="assets/img/icons/forward.svg" alt="" srcset="">
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="instructor d-block d-md-none">
+    <div class="instructor d-block d-md-none my-md-5 mt-4">
 
-        <div class="instructor-box">
+        <div class="instructor-box ">
             <h2 class="text-white text-center">Want to become a <br> course instructor?</h2>
             <br>
             <div class="d-flex justify-content-center flex-column">
@@ -376,14 +382,14 @@
                                         <div class="mt-3 d-flex flex-column">
                                             <label for="" class="form-label">Your Name</label>
                                             <input type="text" placeholder="Johnny Appleseed"
-                                                class="custom-input-rounded">
+                                                class="custom-input-rounded" maxlength="300">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mt-3 d-flex flex-column">
                                             <label for="" class="form-label">Your Username</label>
                                             <input type="text" placeholder="YourName@gmail.com"
-                                                class="custom-input-rounded">
+                                                class="custom-input-rounded" maxlength="300">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -410,7 +416,8 @@
                                                 this course?</label>
                                             <textarea name=""
                                                 placeholder="I’m the best person to teach this course because ..."
-                                                class="custom-input-rounded" id="" cols="30" rows="10"></textarea>
+                                                class="custom-input-rounded" id="" cols="30" rows="10"
+                                                maxlength="300"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -419,7 +426,8 @@
                                                 this course?</label>
                                             <textarea name=""
                                                 placeholder="Yeah! I have XYZ subscribers. Here’s the URL to my channel: YouTube.com/c/HowNotToSuckAt"
-                                                class="custom-input-rounded" id="" cols="30" rows="10"></textarea>
+                                                class="custom-input-rounded" id="" cols="30" rows="10"
+                                                maxlength="300"></textarea>
                                         </div>
                                     </div>
                                 </div>
